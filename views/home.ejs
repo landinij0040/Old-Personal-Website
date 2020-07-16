@@ -1,23 +1,57 @@
 <%- include("partials/header"); -%>
 
-<h1>My name is Isaiah Landin</h1>
-<h2>A Professional Hello World Programmer in ANY language</h2>
-<h1>Mission Statement</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Euismod nisi porta lorem mollis. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Pulvinar mattis nunc sed blandit. Ullamcorper malesuada proin libero nunc consequat interdum varius. Odio euismod lacinia at quis risus sed vulputate odio. Orci eu lobortis elementum nibh tellus molestie nunc non. Lobortis mattis aliquam faucibus purus in massa. Vulputate dignissim suspendisse in est ante in nibh. Gravida quis blandit turpis cursus in hac habitasse platea.</p>
-<h1>Resume</h1>
-<h2>Skills</h2>
-<h3>Inventor CAD</h3>
-<h3>Audio Engineering</h3>
-<h3>Python</h3>
-<h3>Java</h3>
-<h3>JavaScript</h3>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Isaiah Landin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<h2>Experience</h2>
-<h3>Walmart, 12236 Montana Ave, El Paso, TX 79938 - Produce Associate</h3>
-<h4>June 2018 - September 2018</h4>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<h2>Education</h2>
-<h3>El Paso Community College - Associates in Science</h3>
-<h4>2015-2018</h4>
+  </div>
+</nav>
 
+<%# Introduction-------------------------------------------------------------- %>
+<div class="jumbotron jumbotron-fluid intro">
+	<h1 class = "h1-intro">My name is Isaiah Landin</h1>
+	<h2 class = "h2-intro">A <u>Professional Hello World Programmer</u> in <b>ANY</b> language</h2>
+</div>
+
+<%# Mission Statement--------------------------------------------------- %>
+<div class="container mission-container">
+
+	<div class="h1-miss-div container">
+		<h1 class="h1-miss">Mission Statement</h1>
+	</div>
+	<p class="p-miss">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Euismod nisi porta lorem mollis. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Quis imperdiet massa tincidunt nunc pulvinar
+	sapien et ligula. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Pulvinar mattis nunc sed blandit. Ullamcorper malesuada proin libero nunc consequat interdum varius. Odio euismod lacinia at quis risus sed vulputate odio. Orci eu lobortis elementum nibh tellus molestie nunc non. Lobortis mattis aliquam faucibus purus in massa. Vulputate dignissim suspendisse in est ante in nibh. Gravida quis blandit turpis cursus in hac habitasse platea.</p>
+</div>
+
+<%# Resume ------------------------------------------------------ %>
+<div class="container mission-container resume-container">
+
+	<div class="h1-miss-div container">
+		<h1 class="h1-miss">Resume</h1>
+  </div>
+	<div class="resume">
+		<h2 class="h2-resume">Skills</h2>
+		<hr>
+		<ul>
+			<li class="skills">Inventor CAD</li>
+			<li class="skills">Audio Engineering</li>
+			<li class="skills">Python</li>
+			<li class="skills">Java</li>
+			<li class="skills">JavaScript</li>
+		</ul>
+		<h2 class="h2-resume">Experience</h2>
+		<hr>
+		<h3>Walmart, 12236 Montana Ave, El Paso, TX 79938 - Produce Associate</h3>
+		<h4>June 2018 - September 2018</h4>
+
+		<h2 class="h2-resume">Education</h2>
+		<hr>
+		<h3>El Paso Community College - Associates in Science</h3>
+		<h4>2015-2018</h4>
+  </div>
+</div>
 <%- include("partials/footer"); -%>

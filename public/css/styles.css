@@ -1,0 +1,68 @@
+body{
+	/* TODO:change the font to like Roboto like the Bootstrap example */
+	background-color: #eedad1;
+	color: white;
+}
+p{
+	padding: 10px 0 0 0;
+}
+hr{
+	margin-top: 0;
+}
+
+/* Introduction -----------------------------------------------------------------------*/
+.intro{
+	background-color: #383e56;
+}
+
+.h1-intro{
+	/* TODO: find out how to make the h1 center in regular browser then left algin in mobile */
+	text-align: center;
+}
+.h2-intro{
+	/* TODO: find out how to make the h2 center in regular browser then left algin in mobile */
+	text-align: center;
+}
+
+/* Mission Statement------------------------------------------------------------------- */
+.mission-container{
+
+	background-color: #d4b5b0;
+  padding-left: 0;
+	padding-right: 0;
+}
+.h1-miss-div{
+	/* TODO: FIGURE OUT HW TO MAKE THE H1's to get in the middle of there div parent when it is in mobile size */
+	position: relative;
+	right: 20px;
+	background-color:#f69e7b;
+	padding-left: 0;
+	margin-right:0;
+}
+.h1-miss{
+	padding-left: 10px;
+}
+.p-miss{
+	padding-left: 20px;
+	padding-right:20px;
+	padding-bottom: 20px;
+}
+
+/* Resume --------------------------------------------------------------------------------*/
+.resume-container{
+	padding-right:0;
+	margin-bottom: 40px;
+	padding-bottom:20px
+}
+.resume{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.h2-resume{
+	padding: 10px 0 10px 0;
+	background-color: #e0c1bb;
+	margin-bottom:0;
+}
+.skills{
+	font-size: 150%;
+}
