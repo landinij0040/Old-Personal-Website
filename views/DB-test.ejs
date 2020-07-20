@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<h1><%=title%></h1>
+<p><%= description%></p>
+
+<%# Place to insert entries into the test database %>
+<form action="/database-test" method="post">
+	<input type="text" name="newEntry" placeholder="New Entry">
+	<button type="submit" name="entryList">This is the button</button>
+</form>
+
+<%# Where the entries are going to be located %>
+<% entries.forEach(function(entry){ %>
+	<p><%= entry.content %></p>
+<% }); %>
+
+<%- include("partials/footer"); -%>
