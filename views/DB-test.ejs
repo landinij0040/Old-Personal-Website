@@ -10,6 +10,7 @@
 </form>
 
 
+<%# Where the entries are going to be located %>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -17,16 +18,12 @@
     </tr>
   </thead>
   <tbody class="thead-light">
-		<%# Where the entries are going to be located %>
-		<% entries.forEach(function(entry){ %>
+		<% for(var i = entries.length - 1; i >= 0; i--){%>
     <tr>
-      <th scope="row"><%= entry.content %></th>
+      <th scope="row"><%= entries[i].content %></th>
     </tr>
-		<% }); %>
+		<% } %>
   </tbody>
-</table>
-
-
-	<p></p>
+</table
 
 <%- include("partials/footer"); -%>
