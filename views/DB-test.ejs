@@ -17,16 +17,16 @@
     </tr>
   </thead>
   <tbody class="thead-light">
+		<%# Where the entries are going to be located %>
+		<% entries.forEach(function(entry){ %>
     <tr>
-			<%# Where the entries are going to be located %>
-      <th scope="row">1</th>
+      <th scope="row"><%= entry.content %></th>
     </tr>
+		<% }); %>
   </tbody>
 </table>
 
 
-	<% entries.forEach(function(entry){ %>
-	<p><%= entry.content %></p>
-	<% }); %>
+	<p></p>
 
 <%- include("partials/footer"); -%>
