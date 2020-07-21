@@ -1,12 +1,12 @@
 <%- include("partials/header"); -%>
 
 <h1 class="project-header"><%=title%></h1>
-<p class="container h2-resume project-container"><%= description%></p>
+<h2 class="db-project-h2 project-header project-container "><%= description%></h2>
 
 <%# Place to insert entries into the test database %>
 <form action="/data-base-test" method="post">
-	<input type="text" name="newEntry" placeholder="New Entry">
-	<button type="submit" name="entryList">This is the button</button>
+	<input type="text" class="form-control project-form" name="newEntry" placeholder="New Entry">
+	<button type="submit" class="btn btn-light project-form" name="entryList">Click To Enter Entry</button>
 </form>
 
 

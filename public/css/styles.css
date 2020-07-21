@@ -68,8 +68,8 @@ hr{
 }
 /* Projects Page----------------------------------------------------------------------------------- */
 .project-container{
-	margin-top: 4rem;
-	padding: 0 0 0 0;
+	background-color: #d4b5b0;
+	margin-top: 0;
 }
 .project-p{
 	display: inline-block;
@@ -77,12 +77,24 @@ hr{
 }
 .project-h2{
 	padding-left: 1.25rem;
+
 }
 .project-header{
 	background-color: #383e56;
 	padding: 1rem 0 1rem 1rem;
+	margin-bottom: 0;
 }
 .h2-project-div{
 	background-color: #f69e7b;
 	padding: .25rem 0 .25rem 0;
+}
+.project-form{
+	border-color: #f69e7b;
+	border-width: medium;
+	margin-top: 1.25rem;
+	margin-bottom:1.25rem;
+}
+/* Database project -------------------------------------------------------------------------------------*/
+.db-project-h2{
+	background-color: #d4b5b0;
 }
