@@ -1,17 +1,32 @@
 <%- include("partials/header"); -%>
 
-<h1><%=title%></h1>
-<p><%= description%></p>
+<h1 class="project-header"><%=title%></h1>
+<p class="container h2-resume project-container"><%= description%></p>
 
 <%# Place to insert entries into the test database %>
-<form action="/database-test" method="post">
+<form action="/data-base-test" method="post">
 	<input type="text" name="newEntry" placeholder="New Entry">
 	<button type="submit" name="entryList">This is the button</button>
 </form>
 
-<%# Where the entries are going to be located %>
-<% entries.forEach(function(entry){ %>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Entry</th>
+    </tr>
+  </thead>
+  <tbody class="thead-light">
+    <tr>
+			<%# Where the entries are going to be located %>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+
+
+	<% entries.forEach(function(entry){ %>
 	<p><%= entry.content %></p>
-<% }); %>
+	<% }); %>
 
 <%- include("partials/footer"); -%>

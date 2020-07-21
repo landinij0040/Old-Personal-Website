@@ -1,3 +1,13 @@
 <%- include("partials/header"); -%>
-<h1>Projects go here</h1>
+<div class="project-header">
+	<h1>Projects</h1>
+</div>
+<div class="container h2-resume project-container">
+<% projects.forEach(function(project){ %>
+	<div class="h2-project-div">
+		<h2 class="project-h2"><%= project.title %></h2>
+	</div>
+	<p class="project-p "><%= project.description %></p><a href="<%= project.link %>"> link</a>
+<% }); %>
+</div>
 <%- include("partials/footer"); -%>

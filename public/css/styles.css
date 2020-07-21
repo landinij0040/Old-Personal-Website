@@ -66,3 +66,23 @@ hr{
 .skills{
 	font-size: 150%;
 }
+/* Projects Page----------------------------------------------------------------------------------- */
+.project-container{
+	margin-top: 4rem;
+	padding: 0 0 0 0;
+}
+.project-p{
+	display: inline-block;
+	padding-left: 1.25rem;
+}
+.project-h2{
+	padding-left: 1.25rem;
+}
+.project-header{
+	background-color: #383e56;
+	padding: 1rem 0 1rem 1rem;
+}
+.h2-project-div{
+	background-color: #f69e7b;
+	padding: .25rem 0 .25rem 0;
+}
