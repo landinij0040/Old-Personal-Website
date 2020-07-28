@@ -9,7 +9,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/testDB",{
+mongoose.connect("mongodb+srv://admin-isaiah:Isaiah69@cluster0.b9d4n.mongodb.net/testDB",{
 	useNewUrlParser: true,
 	useUnifiedTopology:true
 });
@@ -49,7 +49,7 @@ app.get("/data-base-test", function(req,res){             // Data base test page
 		});
 	});
 });
-app.post("/data-base-test",function(req,res){             
+app.post("/data-base-test",function(req,res){
 	postedEntry = new Test({
 		content: req.body.newEntry
 	}).save();
