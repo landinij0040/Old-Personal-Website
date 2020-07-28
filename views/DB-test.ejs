@@ -1,29 +1,32 @@
 <%- include("partials/header"); -%>
 
-<h1 class="project-header"><%=title%></h1>
+<h1 class="project-header "><%=title%></h1>
 <h2 class="db-project-h2 project-header project-container "><%= description%></h2>
 
-<%# Place to insert entries into the test database %>
-<form action="/data-base-test" method="post">
-	<input type="text" class="form-control project-form" name="newEntry" placeholder="New Entry">
-	<button type="submit" class="btn btn-light project-form" name="entryList">Click To Enter Entry</button>
-</form>
-
+<%# Form to insert entries into the test database %>
+<div class="db-form-div">
+	<form action="db-form" method="post">
+		<input type="text" class="form-control project-form" name="newEntry" placeholder="New Entry">
+		<button type="submit" class="btn btn-light project-form" name="entryList">Click To Enter Entry</button>
+	</form>
+</div>
 
 <%# Where the entries are going to be located %>
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Entry</th>
-    </tr>
-  </thead>
-  <tbody class="thead-light">
-		<% for(var i = entries.length - 1; i >= 0; i--){%>
-    <tr>
-      <th scope="row"><%= entries[i].content %></th>
-    </tr>
-		<% } %>
-  </tbody>
-</table
+<div class="db-table-div">
+	<table class="table">
+	  <thead class="thead-dark">
+	    <tr>
+	      <th scope="col">Entry</th>
+	    </tr>
+	  </thead>
+	  <tbody class="thead-light">
+			<% for(var i = entries.length - 1; i >= 0; i--){%>
+	    <tr>
+	      <th scope="row"><%= entries[i].content %></th>
+	    </tr>
+			<% } %>
+	  </tbody>
+	</table>
+</div>
 
 <%- include("partials/footer"); -%>

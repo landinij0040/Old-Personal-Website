@@ -1,5 +1,5 @@
 body{
-	/* TODO:change the font to like Roboto like the Bootstrap example */
+	font-family : Roboto;
 	background-color: #eedad1;
 	color: white;
 }
@@ -89,8 +89,8 @@ hr{
 	padding: .25rem 0 .25rem 0;
 }
 .project-form{
-	border-color: #f69e7b;
-	border-width: medium;
+	border-color: black;
+	border-width: .05rem;
 	margin-top: 1.25rem;
 	margin-bottom:1.25rem;
 }
@@ -98,3 +98,23 @@ hr{
 .db-project-h2{
 	background-color: #d4b5b0;
 }
+.db-form-div{
+	/* display: block; TODO: Check too see if this fucks anything up*/
+	text-align: center;
+	width: 90%;        /*TODO: See if this works*/
+	margin: 0 auto;
+}
+.db-form{             /*TODO: I think you can delete this class*/
+	/* display: inline-block; */
+}
+.db-table-div{
+	/* text-align: center;  TODO: I don't think I need this */
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* @media(min-width: 500px){
+	.project-large-screen{
+		margin: 0 1rem 0 1rem;
+	}
+} */
