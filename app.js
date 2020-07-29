@@ -50,6 +50,7 @@ app.get("/data-base-test", function(req,res){             // Data base test page
 	});
 });
 app.post("/data-base-test",function(req,res){
+	console.log();                                         // TODO: Delete after testing
 	postedEntry = new Test({
 		content: req.body.newEntry
 	}).save();

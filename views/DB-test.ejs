@@ -13,16 +13,18 @@
 
 <%# Where the entries are going to be located %>
 <div class="db-table-div">
-	<table class="table">
+	<table class="table "> <%# TODO: put back - <table class="table table-striped"> - just in case it does not work  %>
 	  <thead class="thead-dark">
 	    <tr>
 	      <th scope="col">Entry</th>
+				<th scope="col">Date</th>                    <%# TODO: Delete this if it does not work %>
 	    </tr>
 	  </thead>
-	  <tbody class="thead-light">
-			<% for(var i = entries.length - 1; i >= 0; i--){%>
-	    <tr>
+	  <tbody class="">
+			<% for(var i = entries.length - 1; i >= 0; i--){ %>
+	    <tr class="db-tr">
 	      <th scope="row"><%= entries[i].content %></th>
+				<td> Date </td>
 	    </tr>
 			<% } %>
 	  </tbody>

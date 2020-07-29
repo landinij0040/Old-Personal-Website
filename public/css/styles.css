@@ -98,23 +98,25 @@ hr{
 .db-project-h2{
 	background-color: #d4b5b0;
 }
-.db-form-div{
-	/* display: block; TODO: Check too see if this fucks anything up*/
-	text-align: center;
-	width: 90%;        /*TODO: See if this works*/
-	margin: 0 auto;
-}
-.db-form{             /*TODO: I think you can delete this class*/
-	/* display: inline-block; */
-}
-.db-table-div{
-	/* text-align: center;  TODO: I don't think I need this */
-	width: 90%;
-	margin: 0 auto;
-}
 
-/* @media(min-width: 500px){
-	.project-large-screen{
-		margin: 0 1rem 0 1rem;
+@media(min-width: 600px){
+	.db-form-div{
+		/* display: block; TODO: Check too see if this fucks anything up*/
+		text-align: center;
+		width: 90%;        /*TODO: See if this works*/
+		margin: 0 auto;
 	}
-} */
+
+	.db-table-div{
+		/* text-align: center;  TODO: I don't think I need this */
+		width: 90%;
+		margin: 0 auto;
+	}
+
+}
+.db-tr:nth-last-child(even){
+	background-color: white;
+}
+.db-tr:nth-last-child(odd){
+	background-color:#e6e6e6;
+}
