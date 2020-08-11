@@ -1,7 +1,7 @@
 <%- include("partials/header"); -%>
 
 <h1 class="project-header "><%=title%></h1>
-<h2 class="db-project-h2 project-header project-container "><%= description%></h2>
+<h2 class="db-project-h2 project-header "><%= description%></h2>
 
 <%# Form to insert entries into the test database %>
 <div class="db-form-div">
@@ -11,18 +11,29 @@
 	</form>
 </div>
 
+<%# Form to delete all entries in the test database %>
+<div class="db-form-div">
+	<form action="/data-base-test-delete" method="post">
+		<button type="submit" class="btn btn-light project-form" name="entryList">Click To Delete Entries</button>
+	</form>
+</div>
+
 <%# Where the entries are going to be located %>
 <div class="db-table-div">
-	<table class="table">
+	<table class="table ">
 	  <thead class="thead-dark">
 	    <tr>
 	      <th scope="col">Entry</th>
+				<th scope="col">Date</th>
+				<th scope="col">Time</th>
 	    </tr>
 	  </thead>
-	  <tbody class="thead-light">
-			<% for(var i = entries.length - 1; i >= 0; i--){%>
-	    <tr>
+	  <tbody class="">
+			<% for(var i = entries.length - 1; i >= 0; i--){ %>
+	    <tr class="db-tr">
 	      <th scope="row"><%= entries[i].content %></th>
+				<td> <%= entries[i].date %></td>
+				<td> <%= entries[i].time %></td>
 	    </tr>
 			<% } %>
 	  </tbody>

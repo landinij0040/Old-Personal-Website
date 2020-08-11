@@ -32,13 +32,22 @@ hr{
 	padding-right: 0;
 }
 .h1-miss-div{
-	/* TODO: FIGURE OUT HW TO MAKE THE H1's to get in the middle of there div parent when it is in mobile size */
 	position: relative;
 	right: 20px;
 	background-color:#f69e7b;
 	padding-left: 0;
 	margin-right:0;
 }
+@media(max-width: 600px){
+	.h1-miss-div{
+		position: relative;
+		right: 0;
+		background-color:#f69e7b;
+		padding-left: 0;
+		margin-right:0;
+	}
+}
+
 .h1-miss{
 	padding-left: 10px;
 }
@@ -69,7 +78,8 @@ hr{
 /* Projects Page----------------------------------------------------------------------------------- */
 .project-container{
 	background-color: #d4b5b0;
-	margin-top: 0;
+	margin-top: 3.125rem;
+	padding-top:0;
 }
 .project-p{
 	display: inline-block;
@@ -98,23 +108,25 @@ hr{
 .db-project-h2{
 	background-color: #d4b5b0;
 }
-.db-form-div{
-	/* display: block; TODO: Check too see if this fucks anything up*/
-	text-align: center;
-	width: 90%;        /*TODO: See if this works*/
-	margin: 0 auto;
-}
-.db-form{             /*TODO: I think you can delete this class*/
-	/* display: inline-block; */
-}
-.db-table-div{
-	/* text-align: center;  TODO: I don't think I need this */
-	width: 90%;
-	margin: 0 auto;
-}
 
-/* @media(min-width: 500px){
-	.project-large-screen{
-		margin: 0 1rem 0 1rem;
+@media(min-width: 600px){
+	.db-form-div{
+		/* display: block; TODO: Check too see if this fucks anything up*/
+		text-align: center;
+		width: 90%;        /*TODO: See if this works*/
+		margin: 0 auto;
 	}
-} */
+
+	.db-table-div{
+		/* text-align: center;  TODO: I don't think I need this */
+		width: 90%;
+		margin: 0 auto;
+	}
+
+}
+.db-tr:nth-last-child(even){
+	background-color: white;
+}
+.db-tr:nth-last-child(odd){
+	background-color:#e6e6e6;
+}
