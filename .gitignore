@@ -4,3 +4,7 @@ Data_Base_Mongo_Atlas_Password_and_Username.txt
 /*.env
 npm-debug.log
 .DS_Store
+/.vscode
+/async-test
+/tests
+date_function_test.js
