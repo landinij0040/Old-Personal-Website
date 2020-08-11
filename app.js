@@ -34,7 +34,9 @@ app.get("/", function(req,res){                           // Home page
 app.get("/linkedin", function(req, res){                // To my Linkedin page
 	res.redirect("https://www.linkedin.com/in/isaiah-landin-401a431a3/");
 });
-
+app.get("/source", function(req, res){
+	res.redirect("https://github.com/landinij0040/Resume");
+});
 
 app.get("/projects", function(req,res){                   // Projects page
 	Project.find(function(err,foundProjects){
